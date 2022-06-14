@@ -50,8 +50,6 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
       detail01: productInfo[location.pathname.substring(9)]?.detail01,
       detail02: productInfo[location.pathname.substring(9)]?.detail02,
       detail03: productInfo[location.pathname.substring(9)]?.detail03,
-      detail04: productInfo[location.pathname.substring(9)]?.detail04,
-      detail05: productInfo[location.pathname.substring(9)]?.detail05,
     });
   }, []);
 
@@ -152,6 +150,10 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
             <br />
             <br />
             <img alt="" src={detailImgArray?.detail02}></img>
+            <br />
+            <br />
+            <br />
+            <img alt="" src={detailImgArray?.detail03}></img>
           </div>
         </div>
       </div>
