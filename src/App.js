@@ -98,7 +98,6 @@ const App = () => {
           <Route path="/blog/:blogID" element={<Blog></Blog>}></Route>
           <Route path="/cart" element={<Cart cartStatus={cartStatus} setCartStatus={setCartStatus}></Cart>}></Route>
           <Route path="/test" element={<Test></Test>}></Route>
-          {/* <Route path="/profiles/:search" element={<Profile></Profile>} /> */}
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
         <Footer></Footer>
