@@ -40,7 +40,7 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
   const [productImg, setProductImg] = useState("");
-  const [detailImgArray, setDetail] = useState({ detail01: null, detail02: null, detail03: null, detail04: null, detail05: null });
+  const [detailImgArray, setDetail] = useState({ detail01: null, detail02: null, detail03: null });
 
   useEffect(() => {
     setProductName(productInfo[location.pathname.substring(9)].title);
