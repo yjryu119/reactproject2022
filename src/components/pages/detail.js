@@ -4,10 +4,6 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import "../../scss/detail.scss";
 import PopupLayer from "../common/popupLayer";
 
-import Detail01 from "../../img/detail01.jpg";
-import Detail02 from "../../img/detail02.jpg";
-import Detail03 from "../../img/detail03.jpg";
-
 const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -44,11 +40,19 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
   const [productImg, setProductImg] = useState("");
+  const [detailImgArray, setDetail] = useState({ detail01: null, detail02: null, detail03: null, detail04: null, detail05: null });
 
   useEffect(() => {
     setProductName(productInfo[location.pathname.substring(9)].title);
     setProductPrice(productInfo[location.pathname.substring(9)].price);
     setProductImg(productInfo[location.pathname.substring(9)].src);
+    setDetail({
+      detail01: productInfo[location.pathname.substring(9)]?.detail01,
+      detail02: productInfo[location.pathname.substring(9)]?.detail02,
+      detail03: productInfo[location.pathname.substring(9)]?.detail03,
+      detail04: productInfo[location.pathname.substring(9)]?.detail04,
+      detail05: productInfo[location.pathname.substring(9)]?.detail05,
+    });
   }, []);
 
   const cartInfo = [
@@ -97,8 +101,7 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
       }
     }
   };
-  console.log(cartStatus);
-
+  // console.log(cartStatus);
   return (
     <>
       <div className={`${layer ? "detail scrollNone" : "detail"}`}>
@@ -144,11 +147,11 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
             <br />
             <br />
             <br />
-            <img alt="" src={Detail02}></img>
+            <img alt="" src={detailImgArray?.detail01}></img>
             <br />
             <br />
             <br />
-            <img alt="" src={Detail03}></img>
+            <img alt="" src={detailImgArray?.detail02}></img>
           </div>
         </div>
       </div>
