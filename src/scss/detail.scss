@@ -1,8 +1,8 @@
 .detail {
   .flexBox {
     display: flex;
-    // height: calc(100vh - 52px);
-    // position: relative;
+    height: calc(100vh - 52px);
+    position: relative;
     border-bottom: 1px solid #d9d9d9;
   }
   .scrollAuto {
@@ -30,8 +30,6 @@
     width: 550px;
     min-width: 550px;
     background-color: white;
-    position: sticky;
-    top: 57px;
   }
   .quantityBtn {
     margin-bottom: 5px;
@@ -45,6 +43,17 @@
     }
     span {
       margin: 0 15px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .flexBox {
+      display: flex;
+      height: unset;
+    }
+    .scrollFixed {
+      position: sticky;
+      top: 57px;
     }
   }
 
