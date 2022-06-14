@@ -11,7 +11,7 @@ const Article = ({ articleInfo }) => {
               <div>
                 <img src={currentValue.img} alt="" />
               </div>
-              <div className="test">
+              <div className="">
                 <div>{currentValue.title}</div>
                 <div>{currentValue.contents}</div>
               </div>

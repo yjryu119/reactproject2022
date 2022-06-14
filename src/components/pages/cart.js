@@ -12,9 +12,6 @@ const Cart = ({ cartStatus, setCartStatus }) => {
         <>
           <div className="wrapper cart">
             <CheckoutList setCartStatusFromCart={setCartStatus} cartStatusFromCart={cartStatus}></CheckoutList>
-            {/* <div>{cartStatus[0].productName}</div>
-          <div>{cartStatus[0].productPrice}</div>
-          <div>{cartStatus[0].productQuantity}</div> */}
           </div>
         </>
       ) : (
