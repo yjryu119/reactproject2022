@@ -87,7 +87,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/reactproject2022/">
         <ScrollTop />
         <NavBar keyword={keyword} setKeyword={setKeyword}></NavBar>
         <Routes>
