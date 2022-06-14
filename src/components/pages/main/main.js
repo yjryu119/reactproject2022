@@ -49,7 +49,7 @@ function Main(props) {
       <ControlledCarousel onMouseEnter={hideAll} />
       <div className="main-catergory-subTitle">FEATURED PRODUCTS</div>
       <div className="main-catergory-title">NEW IN</div>
-      <ItemList grid={"four"} lists={props.productInfo} linkTo={blogArticles.linkTo} />
+      <ItemList main={true} grid={"four"} lists={props.productInfo} linkTo={blogArticles.linkTo} />
       <div className="d-center">
         <Link className="customized-btn-wrapper" to="/category">
           <Button className="customized-btn" variant="outline-dark">

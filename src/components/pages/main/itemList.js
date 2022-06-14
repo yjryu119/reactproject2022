@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import ItemCard from "./itemCard";
 
-function ItemList({ lists, grid, linkTo, setGrid, search, keyword }) {
+function ItemList({ lists, grid, linkTo, setGrid, search, keyword, main }) {
   return (
     <div className="card-wrapper">
       {grid === "four" ? (
@@ -16,6 +16,22 @@ function ItemList({ lists, grid, linkTo, setGrid, search, keyword }) {
                     <ItemCard title={result.title} src={result.src} price={result.price}></ItemCard>
                   </Link>
                 </Col>
+              ) : (
+                <></>
+              );
+            })}
+          </Row>
+        ) : main === true ? (
+          <Row xs={1} md={4} className="g-4 ">
+            {lists.map((result, index) => {
+              return index < 4 ? (
+                <>
+                  <Col>
+                    <Link className="" to={"/product/" + result.id}>
+                      <ItemCard title={result.title} src={result.src} price={result.price}></ItemCard>
+                    </Link>
+                  </Col>
+                </>
               ) : (
                 <></>
               );
