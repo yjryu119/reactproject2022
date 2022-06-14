@@ -115,7 +115,7 @@ const NavBar = ({ setKeyword, keyword }) => {
                     <FiShoppingCart />
                   </Button>
                 </Link>
-                <Button variant="">
+                <Button className="btnDisabled" variant="">
                   <FiUser />
                 </Button>
               </Form>

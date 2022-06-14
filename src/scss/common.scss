@@ -5,6 +5,9 @@
   font-weight: 300;
   letter-spacing: 0.04px;
 }
+.btnDisabled {
+  pointer-events: none;
+}
 a {
   color: unset;
   text-decoration: none;
