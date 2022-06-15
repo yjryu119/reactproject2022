@@ -70,10 +70,6 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
       let keyCollection = [];
       cartStatus.map((data, index) => {
         return keyCollection.push(data.productName);
-        // const cartUpdateTrigger = () => {
-        //   data.productQuantity = data.productQuantity + productQuantity;
-        // };
-        // return data.productName === productName ? cartUpdateTrigger() : setCartStatus(cartConcat);
       });
 
       if (keyCollection.includes(cartInfo[0].productName)) {
@@ -130,24 +126,13 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
           </div>
           <div className="scrollAuto">
             <img alt="" src={productImg}></img>
-            {/* <img alt="" src={detailImgArray?.detail01}></img> */}
             {detailImgArray?.detail01 ? <img alt="" src={detailImgArray?.detail01}></img> : <></>}
             {detailImgArray?.detail02 ? <img alt="" src={detailImgArray?.detail02}></img> : <></>}
             {detailImgArray?.detail03 ? <img alt="" src={detailImgArray?.detail03}></img> : <></>}
-            {/* <img alt="" src={detailImgArray?.detail03}></img> */}
           </div>
         </div>
       </div>
-      {/* <ItemList grid={"four"} titleLists={relatedProducts} src={relatedProducts.src} /> */}
       <PopupLayer layer={layer} layerText={`${productQuantity} item(s) has been added to your cart.`} setLayer={setLayer} btnBottom={"CLOSE"}></PopupLayer>
-
-      {/* <h3>{productId}번 글 입니다.</h3> */}
-      {/* <div>{location.pathname}</div> */}
-      {/* <div>{location.search}</div> */}
-      {/* <div>{location.hash}</div> */}
-      {/* <div>{location.state}</div> */}
-      {/* <div>{location.key}</div> */}
-      {/* <button onClick={() => navigate(-1, { replace: true })}>back</button> */}
     </>
   );
 };
