@@ -10,8 +10,6 @@ import Blog from "./components/pages/blog.js";
 import ScrollTop from "./components/scrollRestoration";
 import Cart from "./components/pages/cart";
 
-import Test from "./components/pages/test";
-
 import NavBar from "./components/pages/main/navBar";
 import Footer from "./components/pages/footer";
 
@@ -45,8 +43,6 @@ const App = () => {
   useEffect(() => {
     window.localStorage.setItem("cartStatus", JSON.stringify(cartStatus));
   }, [cartStatus]);
-
-  console.log(cartStatus);
 
   const productInfo = [
     {
@@ -123,7 +119,6 @@ const App = () => {
           <Route path="/product/:productId" element={<Detail cartStatus={cartStatus} productInfo={productInfo} setCartStatus={setCartStatus}></Detail>}></Route>
           <Route path="/blog/:blogID" element={<Blog></Blog>}></Route>
           <Route path="/cart" element={<Cart cartStatus={cartStatus} setCartStatus={setCartStatus}></Cart>}></Route>
-          <Route path="/test" element={<Test></Test>}></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
         <Footer></Footer>

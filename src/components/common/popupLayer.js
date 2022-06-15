@@ -30,7 +30,6 @@ const PopupLayer = ({ layer, layerText, setLayer, btnBottom }) => {
               >
                 {btnBottom}
               </Button>
-              {console.log(layer)}
             </div>
           </div>
         </>

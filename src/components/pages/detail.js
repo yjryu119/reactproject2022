@@ -26,14 +26,11 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
 
   const [layer, setLayer] = useState(false);
   const setLayerStatus = () => {
-    console.log("first" + layer);
     if (layer === false) {
       setLayer(true);
-      console.log("passing" + layer);
       document.body.style.overflow = "hidden";
     } else if (layer === true) {
       setLayer(false);
-      console.log("passing" + layer);
     }
   };
 
@@ -62,13 +59,9 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
   ];
 
   const passCartInfo = () => {
-    console.log(cartStatus);
-
     if (cartStatus === 0) {
       setCartStatus(cartInfo);
     } else {
-      console.log(cartStatus);
-
       let keyCollection = [];
       cartStatus.map((data, index) => {
         return keyCollection.push(data.productName);
@@ -77,16 +70,10 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
         // };
         // return data.productName === productName ? cartUpdateTrigger() : setCartStatus(cartConcat);
       });
-      console.log(keyCollection);
-      console.log(cartStatus);
 
       if (keyCollection.includes(cartInfo[0].productName)) {
-        console.log(cartStatus);
-
         let cartCopy = cartStatus;
-        console.log(cartCopy);
         cartCopy.map((data, index) => {
-          console.log(cartCopy.productQuantity);
           return data.productName === productName ? (data.productQuantity = data.productQuantity + productQuantity) : false;
         });
 
@@ -99,7 +86,6 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
       }
     }
   };
-  // console.log(cartStatus);
   return (
     <>
       <div className={`${layer ? "detail scrollNone" : "detail"}`}>

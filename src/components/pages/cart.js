@@ -3,7 +3,6 @@ import CheckoutList from "./chcekoutList";
 import "../../scss/cart.scss";
 
 const Cart = ({ cartStatus, setCartStatus }) => {
-  console.log(cartStatus);
   return (
     <>
       <div className="main-catergory-subTitle"></div>
