@@ -37,12 +37,17 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
   const [productImg, setProductImg] = useState("");
+  const [productSpec, setProductSpec] = useState("");
+  const [productDescription, setProductDescription] = useState("");
   const [detailImgArray, setDetail] = useState({ detail01: null, detail02: null, detail03: null });
 
   useEffect(() => {
     setProductName(productInfo[location.pathname.substring(9)].title);
     setProductPrice(productInfo[location.pathname.substring(9)].price);
     setProductImg(productInfo[location.pathname.substring(9)].src);
+    setProductSpec(productInfo[location.pathname.substring(9)].spec);
+    setProductDescription(productInfo[location.pathname.substring(9)].description);
+
     setDetail({
       detail01: productInfo[location.pathname.substring(9)]?.detail01,
       detail02: productInfo[location.pathname.substring(9)]?.detail02,
@@ -96,16 +101,13 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
             <div className="detail">
               <br />
               <br />
-              Finally, a wine glass that combines a delicate aesthetic with the ease of comfort. Made for convenience and flexibility of use, this piece even has a hidden shot glass in its stem for
-              ultimate versatility. Available in Clear or Smoke. Sold individually. Wine Glass in Smoke Wine Glass in Smoke DEPARTO WINE GLASS IN SMOKE $18 Pay in 4 interest-free installments for
-              orders over $50 with Learn more 4 ADD TO CART Product Specs: L2.8" x W2.8" x H5.2" / 10 oz Ceramic Finally, a wine glass that combines a delicate aesthetic with the ease of
-              comfort.Available in Clear or Smoke. Sold individually.
+              <div>{productDescription}</div>
               <br />
               <br />
               <br />
               <span style={{ fontWeight: 500 }}>Product Specs:</span>
               <br />
-              L2.8" x W2.8" x H5.2" / 10 oz Ceramic
+              <div>{productSpec}</div>
               <br />
               <br />
             </div>
@@ -128,18 +130,11 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
           </div>
           <div className="scrollAuto">
             <img alt="" src={productImg}></img>
-            <br />
-            <br />
-            <br />
-            <img alt="" src={detailImgArray?.detail01}></img>
-            <br />
-            <br />
-            <br />
-            <img alt="" src={detailImgArray?.detail02}></img>
-            <br />
-            <br />
-            <br />
-            <img alt="" src={detailImgArray?.detail03}></img>
+            {/* <img alt="" src={detailImgArray?.detail01}></img> */}
+            {detailImgArray?.detail01 ? <img alt="" src={detailImgArray?.detail01}></img> : <></>}
+            {detailImgArray?.detail02 ? <img alt="" src={detailImgArray?.detail02}></img> : <></>}
+            {detailImgArray?.detail03 ? <img alt="" src={detailImgArray?.detail03}></img> : <></>}
+            {/* <img alt="" src={detailImgArray?.detail03}></img> */}
           </div>
         </div>
       </div>
