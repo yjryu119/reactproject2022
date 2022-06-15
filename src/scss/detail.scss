@@ -31,6 +31,12 @@
     width: 550px;
     min-width: 550px;
     background-color: white;
+    .productDescription {
+      margin: 40px 0 60px 0;
+    }
+    .productSpec {
+      margin-bottom: 80px;
+    }
   }
   .quantityBtn {
     margin-bottom: 5px;

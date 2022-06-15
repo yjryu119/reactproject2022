@@ -95,19 +95,10 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
             <div style={{ fontWeight: 500 }}>{productName}</div>
             <div style={{ fontWeight: 500 }}>{productPrice}</div>
             <div className="detail">
-              <br />
-              <br />
-              <div>{productDescription}</div>
-              <br />
-              <br />
-              <br />
-              <span style={{ fontWeight: 500 }}>Product Specs:</span>
-              <br />
-              <div>{productSpec}</div>
-              <br />
-              <br />
+              <div className="productDescription">{productDescription}</div>
+              <div style={{ fontWeight: 500 }}>Product Specs:</div>
+              <div className="productSpec">{productSpec}</div>
             </div>
-
             <div className="quantityBtn">
               <button onClick={btnDecrease}>-</button>
               <span>{productQuantity}</span>
