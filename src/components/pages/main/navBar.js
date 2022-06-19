@@ -22,7 +22,6 @@ const NavBar = ({ setKeyword, keyword }) => {
   const hideDropdown2 = (e) => {
     setShow2(false);
   };
-
   const hideAll = () => {
     setShow(false);
     setShow2(false);
@@ -30,13 +29,10 @@ const NavBar = ({ setKeyword, keyword }) => {
 
   const location = useLocation();
 
-  // const [keyword, setKeywordChild] = useState(() => JSON.parse(window.localStorage.getItem("keyword")) || 0);
   const [KeywordChild, setKeywordChild] = useState("");
-
   const keyworkdHandler = (e) => {
     setKeywordChild(e.target.value);
   };
-
   const searchHandler = () => {
     setKeyword(KeywordChild);
   };
@@ -54,7 +50,6 @@ const NavBar = ({ setKeyword, keyword }) => {
     if (location.pathname !== "/search/") {
       setKeyword("");
     }
-    // alert(itemListFromCategory);
   }, [location.pathname]);
 
   useEffect(() => {

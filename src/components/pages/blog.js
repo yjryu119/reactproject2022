@@ -1,7 +1,5 @@
 import React from "react";
-import NavBar from "./main/navBar";
 import Article from "././article";
-import Footer from "../../components/pages/footer";
 import "../../scss/blog.scss";
 import Img01 from "../../img/article01.jpg";
 import Img02 from "../../img/article02.jpg";
