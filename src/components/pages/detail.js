@@ -120,6 +120,17 @@ const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) =>
             {detailImgArray?.detail01 ? <img alt="" src={detailImgArray?.detail01}></img> : <></>}
             {detailImgArray?.detail02 ? <img alt="" src={detailImgArray?.detail02}></img> : <></>}
             {detailImgArray?.detail03 ? <img alt="" src={detailImgArray?.detail03}></img> : <></>}
+            <div className="d-center ">
+              <Button
+                className="customized-btn top-btn"
+                variant=""
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                TOP
+              </Button>
+            </div>
           </div>
         </div>
       </div>
