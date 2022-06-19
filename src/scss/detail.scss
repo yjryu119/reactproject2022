@@ -26,6 +26,7 @@
 
   .scrollFixed {
     overflow: scroll;
+    scrollbar-width: none;
     height: 100%;
     padding: 100px 0 140px 300px;
     width: 550px;
