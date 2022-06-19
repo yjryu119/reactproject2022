@@ -1,11 +1,11 @@
 import React from "react";
 import "../../scss/blog.scss";
 
-const Article = ({ articleInfo }) => {
+const Article = ({ articleInfoData }) => {
   return (
     <>
       <div className="wrapper blog">
-        {articleInfo.map((currentValue, index) => {
+        {articleInfoData.map((currentValue, index) => {
           return index % 2 !== 0 ? (
             <div className="d-center reverse">
               <div>

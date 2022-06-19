@@ -1,15 +1,13 @@
 import "../../../scss/main.scss";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import ControlledCarousel from "./carouselFade";
 import ItemList from "./itemList";
-import NavBar from "./navBar";
-import Footer from "../footer";
 
-import blog02 from "../../../img/blog02.jpg";
-import blog03 from "../../../img/blog03.jpg";
-import blog04 from "../../../img/blog04.jpg";
+import blog01 from "../../../img/blog02.jpg";
+import blog02 from "../../../img/blog03.jpg";
+import blog03 from "../../../img/blog04.jpg";
 
 function Main(props) {
   const [show, setShow] = useState(false);
@@ -24,25 +22,21 @@ function Main(props) {
       id: 1,
       title: "RECIPE: CLAYPOT SESAME OIL CHICKEN RICE",
       price: "Inspired by a Taiwanese dish Sesame Oil Chicken Soup (麻油雞), this dish is essentially a non-soup version of the Taiwanese dish. ",
-      src: blog04,
+      src: blog03,
     },
     {
       id: 2,
       title: "WE ALL NEED SOME MATCHA IN OUR LIVES",
       price: "What comes to mind with the word “matcha”? A matcha latte? Your favorite cafe? ",
-      src: blog02,
+      src: blog01,
     },
     {
       id: 3,
       title: "GUIDE: CERAMIC POTTERY VS. PORCELAIN",
       price: "More often than not, “ceramics” is used as a blanket term to describe both pottery (earthenware) and porcelain. ",
-      src: blog03,
+      src: blog02,
     },
   ];
-
-  // useEffect(() => {
-  //   props.setItemListFromCategory(titleLists);
-  // }, []);
 
   return (
     <div>
@@ -60,7 +54,7 @@ function Main(props) {
       <div className="Hor-line"></div>
       <div className="main-catergory-subTitle"></div>
       <div className="main-catergory-title">BLOG</div>
-      <ItemList grid={"three"} lists={blogArticles} src={blogArticles.src} />
+      <ItemList grid={"three"} lists={blogArticles} />
       <br></br>
       <br></br>
       <br></br>
