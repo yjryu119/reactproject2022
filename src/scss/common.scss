@@ -41,66 +41,69 @@ h1 {
   margin-bottom: 0.2rem;
   letter-spacing: 0.5px;
 }
-@media (max-width: 991px) {
-  .navPC {
-    display: none;
-  }
-  .mbTop {
-    justify-content: space-between;
-    width: 100%;
-    > div,
-    > form {
-      width: 33%;
+nav {
+  @media (max-width: 991px) {
+    .navPC {
+      display: none;
     }
-    > a {
-      width: 33%;
-      text-align: center;
-      margin: 0 auto;
-    }
-  }
-  .navOutline {
-    justify-content: flex-end;
-  }
-  .collapse,
-  .navbar-nav-scroll {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .navMobile {
-    display: none;
-  }
-  .navPC {
-    display: block;
-  }
-
-  #navbarScroll {
-    > div {
-      width: 33%;
-    }
-    > form {
-      width: 33%;
-      justify-content: flex-end;
-      input {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-radius: 0px;
-        background-color: transparent;
-        width: 50%;
+    .mbTop {
+      justify-content: space-between;
+      width: 100%;
+      > div,
+      > form {
+        width: 33%;
+      }
+      > a {
+        width: 33%;
+        text-align: center;
+        margin: 0 auto;
       }
     }
-    > a {
-      width: 33%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .navOutline {
+      justify-content: flex-end;
+    }
+    .collapse,
+    .navbar-nav-scroll {
+      width: 100%;
     }
   }
-  .dropdown-item {
-    pointer-events: none;
+  @media (min-width: 992px) {
+    .navMobile {
+      display: none;
+    }
+    .navPC {
+      display: block;
+    }
   }
 }
+
+#navbarScroll {
+  > div {
+    width: 33%;
+  }
+  > form {
+    width: 33%;
+    justify-content: flex-end;
+    input {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0px;
+      background-color: transparent;
+      width: 50%;
+    }
+  }
+  > a {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.dropdown-item {
+  pointer-events: none;
+}
+
 .navOutline {
   :focus {
     border-color: transparent !important;
@@ -143,7 +146,6 @@ h1 {
   background-color: white;
   z-index: 999;
 }
-
 .dropdown-item.active,
 .dropdown-item:active {
   color: #1e2125;
