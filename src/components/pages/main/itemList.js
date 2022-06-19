@@ -6,7 +6,7 @@ import ItemCard from "./itemCard";
 function ItemList({ lists, grid, linkTo, setGrid, search, keyword, main }) {
   return (
     <div className="card-wrapper">
-      {grid === "four" ? (
+      {grid === 4 ? (
         search === true ? (
           <Row xs={1} md={4} className="g-4">
             {lists.map((result) => {
@@ -48,7 +48,7 @@ function ItemList({ lists, grid, linkTo, setGrid, search, keyword, main }) {
             ))}
           </Row>
         )
-      ) : grid === "three" ? (
+      ) : grid === 3 ? (
         <Row xs={1} md={3} className="g-4 grid-three-customized">
           {lists.map((result) => (
             <Col>

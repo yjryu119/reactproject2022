@@ -9,18 +9,17 @@ const Category = (props) => {
         <>
           <div className="main-catergory-subTitle">ALL PRODUCTS</div>
           <div className="main-catergory-title"></div>
-          <ItemList grid={"four"} lists={props.productInfo} />
+          <ItemList grid={4} lists={props.productInfo} />
         </>
       ) : props.search ? (
         <>
           <div className="main-catergory-subTitle">SEARCH RESULT</div>
           <div className="main-catergory-title">{props.keyword}</div>
-          <ItemList grid={"four"} keyword={props.keyword} search={true} lists={props.productInfo} />
+          <ItemList grid={4} keyword={props.keyword} search={true} lists={props.productInfo} />
         </>
       ) : (
         <></>
       )}
-
       <br></br>
       <br></br>
       <br></br>
