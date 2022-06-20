@@ -57,7 +57,7 @@ const App = () => {
       title: "WINE GLASS IN SMOKE",
       price: "$18",
       spec: `L2.8" x W2.8" x H5.2" / 10 oz Ceramic`,
-      description: `Finally, a wine glass that combines a delicate aesthetic with the ease of comfort. Made for convenience and flexibility of use, this piece even has a hidden shot glass in its stem for ultimate versatility. Available in Clear or Smoke. Sold individually. Wine Glass in Smoke Wine Glass in Smoke DEPARTO WINE GLASS IN SMOKE $18 Pay in 4 interest-free installments for orders over $50 with Learn more 4 ADD TO CART Product Specs: L2.8" x W2.8" x H5.2" / 10 oz Ceramic Finally, a wine glass that combines a delicate aesthetic with the ease of comfort.Available in Clear or Smoke. Sold individually.`,
+      description: `Finally, a wine glass that combines a delicate aesthetic with the ease of comfort. Made for convenience and flexibility of use, this piece even has a hidden shot glass in its stem for ultimate versatility. Available in Clear or Smoke. Sold individually. allments for orders over $50 with Learn more 4 ADD TO CART. Finally, a wine glass that combines a delicate aesthetic with the ease of comfort.Available in Clear or Smoke. Sold individually.`,
       src: product01,
       detail01: product01_01,
       detail02: product01_02,
