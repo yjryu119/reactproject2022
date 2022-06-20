@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactproject2022/static/css/main.3898eb7b.css",
-    "main.js": "/reactproject2022/static/js/main.f110ccb6.js",
+    "main.css": "/reactproject2022/static/css/main.77c94a5b.css",
+    "main.js": "/reactproject2022/static/js/main.979a4692.js",
     "static/js/787.037ae921.chunk.js": "/reactproject2022/static/js/787.037ae921.chunk.js",
     "static/media/banner1.jpg": "/reactproject2022/static/media/banner1.3ac1796f563bbdcb6238.jpg",
     "static/media/article02.jpg": "/reactproject2022/static/media/article02.5458f004743c6e399397.jpg",
@@ -29,12 +29,12 @@
     "static/media/product06.jpg": "/reactproject2022/static/media/product06.cea312644f9d3ab26f5d.jpg",
     "static/media/product03.jpg": "/reactproject2022/static/media/product03.cc492a8834985e6e1917.jpg",
     "index.html": "/reactproject2022/index.html",
-    "main.3898eb7b.css.map": "/reactproject2022/static/css/main.3898eb7b.css.map",
-    "main.f110ccb6.js.map": "/reactproject2022/static/js/main.f110ccb6.js.map",
+    "main.77c94a5b.css.map": "/reactproject2022/static/css/main.77c94a5b.css.map",
+    "main.979a4692.js.map": "/reactproject2022/static/js/main.979a4692.js.map",
     "787.037ae921.chunk.js.map": "/reactproject2022/static/js/787.037ae921.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3898eb7b.css",
-    "static/js/main.f110ccb6.js"
+    "static/css/main.77c94a5b.css",
+    "static/js/main.979a4692.js"
   ]
 }
