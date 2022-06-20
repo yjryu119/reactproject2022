@@ -1,4 +1,4 @@
-import "../../../scss/main.scss";
+import "../../scss/main.scss";
 
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";

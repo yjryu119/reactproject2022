@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
-import "../../scss/detail.scss";
-import PopupLayer from "../common/popupLayer";
+import "../../../scss/detail.scss";
+import PopupLayer from "../../common/popupLayer";
 
 const Detail = ({ setCartItemLists, productInfo, setCartStatus, cartStatus }) => {
   const location = useLocation();

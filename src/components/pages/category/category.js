@@ -1,6 +1,6 @@
 import "../../../scss/main.scss";
 import React from "react";
-import ItemList from "../main/itemList";
+import ItemList from "../../common/itemList";
 
 const Category = (props) => {
   return (

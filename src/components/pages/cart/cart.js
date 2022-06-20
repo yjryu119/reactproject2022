@@ -1,6 +1,6 @@
 import React from "react";
 import CheckoutList from "./chcekoutList";
-import "../../scss/cart.scss";
+import "../../../scss/cart.scss";
 
 const Cart = ({ cartStatus, setCartStatus }) => {
   return (

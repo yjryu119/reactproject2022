@@ -4,14 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Main from "./components/pages/main/main";
 import Category from "./components/pages/category/category";
-import Detail from "./components/pages/detail";
+import Detail from "./components/pages/detail/detail";
 import NotFound from "./components/pages/notFound.js";
-import Blog from "./components/pages/blog.js";
+import Blog from "./components/pages/blog/blog.js";
 import ScrollTop from "./components/scrollRestoration";
-import Cart from "./components/pages/cart";
+import Cart from "./components/pages/cart/cart";
 
-import NavBar from "./components/pages/main/navBar";
-import Footer from "./components/pages/footer";
+import NavBar from "./components/common/navBar";
+import Footer from "./components/common/footer";
 
 import product01 from "../src/img/product01.jpg";
 import product02 from "../src/img/product02.jpg";

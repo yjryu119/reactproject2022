@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import ControlledCarousel from "./carouselFade";
-import ItemList from "./itemList";
+import ItemList from "../../common/itemList";
 
 import blog01 from "../../../img/blog02.jpg";
 import blog02 from "../../../img/blog03.jpg";
